@@ -4,13 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::resource('products', ProductController::class);
 
 
-Route::get('/shop', [ProductController::class, 'shop'])->name('shop');
+Route::get('/', [ProductController::class, 'shop'])->name('shop');
 
 
