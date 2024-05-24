@@ -66,5 +66,9 @@ class ProductController extends Controller
     $products = Product::all();
     return view('shop', compact('products'));
 }
+public function addToCart($id)
+{
+    return view('');
+}
 
 }
