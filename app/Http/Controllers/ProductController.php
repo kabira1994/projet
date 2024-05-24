@@ -33,7 +33,7 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = Product::findOrFail($id);
-        return view('shop', compact('product'));
+        return view('products.show', compact('product'));
     }
 
     public function edit($id)
@@ -64,7 +64,7 @@ class ProductController extends Controller
     public function shop()
 {
     $products = Product::all();
-    return view('shop', compact('products'));
+    return view('clients.shop', compact('products'));
 }
 public function addToCart($id)
 {
