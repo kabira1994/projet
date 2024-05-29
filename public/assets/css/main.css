@@ -1468,7 +1468,7 @@ input[type="submit"] {
 }
 
 .homepage-bg-1 {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/hero-bg-3.jpg);
 }
 
 .homepage-bg-2 {
@@ -1476,7 +1476,7 @@ input[type="submit"] {
 }
 
 .homepage-bg-3 {
-  background-image: url(../img/hero-bg-.jpg);
+  background-image: url(../img/hero-bg-4.jpg);
 }
 
 .homepage-slider {
@@ -2755,3 +2755,18 @@ table.order-details tbody td {
   vertical-align: middle;
   width: 100%;
 }
+/* public/css/styles.css */
+
+body {
+  background-color: #f8f9fa;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+

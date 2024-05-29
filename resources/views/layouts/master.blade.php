@@ -58,8 +58,13 @@
 
 						<!-- menu start -->
 						<nav class="main-menu">
+							
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a>
+								
+									<li><a href="{{ route('register') }}">Register</a></li>
+									<li><a href="{{ route('login') }}">Login</a></li>
+								
+								<li class="current-list-item"><a href="{{ route('home') }}">Home</a>
 									<ul class="sub-menu">
 										<li><a href="index.html">Static Home</a></li>
 										<li><a href="index_2.html">Slider Home</a></li>
@@ -72,8 +77,7 @@
 										<li><a href="about.html">About</a></li>
 										<li><a href="cart.html">Cart</a></li>
 										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
+										<li><a href="{{ route('contact.show') }}">Contact</a></li>										<li><a href="news.html">News</a></li>
 										<li><a href="shop.html">Shop</a></li>
 									</ul>
 								</li>
@@ -81,9 +85,10 @@
 									<ul class="sub-menu">
 										<li><a href="news.html">News</a></li>
 										<li><a href="single-news.html">Single News</a></li>
+										
 									</ul>
 								</li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="{{ route('contact.show') }}">Contact</a></li>
 								<li><a href="shop.html">Shop</a>
 									<ul class="sub-menu">
 										<li><a href="shop.html">Shop</a></li>
@@ -94,7 +99,7 @@
 								</li>
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="shopping-cart" href="{{ route('cart.show') }}"><i class="fas fa-shopping-cart"></i></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
@@ -128,67 +133,67 @@
 		</div>
 	</div>
 	<!-- end search area -->
-
-	<!-- home page slider -->
-	<div class="homepage-slider">
-		<!-- single home slider -->
-		<div class="single-homepage-slider homepage-bg-1">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-lg-7 offset-lg-1 offset-xl-0">
-						<div class="hero-text">
-							<div class="hero-text-tablecell">
-								<p class="subtitle">Fresh & Organic</p>
-								<h1>Delicious Seasonal Fruits</h1>
-								<div class="hero-btns">
-									<a href="shop.html" class="boxed-btn">Fruit Collection</a>
-									<a href="contact.html" class="bordered-btn">Contact Us</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- single home slider -->
-		<div class="single-homepage-slider homepage-bg-2">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-10 offset-lg-1 text-center">
-						<div class="hero-text">
-							<div class="hero-text-tablecell">
-								<p class="subtitle">Fresh Everyday</p>
-								<h1>100% Organic Collection</h1>
-								<div class="hero-btns">
-									<a href="shop.html" class="boxed-btn">Visit Shop</a>
-									<a href="contact.html" class="bordered-btn">Contact Us</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- single home slider -->
-		<div class="single-homepage-slider homepage-bg-3">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-10 offset-lg-1 text-right">
-						<div class="hero-text">
-							<div class="hero-text-tablecell">
-								<p class="subtitle">Mega Sale Going On!</p>
-								<h1>Get December Discount</h1>
-								<div class="hero-btns">
-									<a href="shop.html" class="boxed-btn">Visit Shop</a>
-									<a href="contact.html" class="bordered-btn">Contact Us</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<!-- home page slider -->
+<div class="homepage-slider">
+    <!-- single home slider -->
+    <div class="single-homepage-slider homepage-bg-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-7 offset-lg-1 offset-xl-0">
+                    <div class="hero-text">
+                        <div class="hero-text-tablecell">
+                            <p class="subtitle">Qualité Supérieure</p>
+                            <h1>Machines à Café Haut de Gamme</h1>
+                            <div class="hero-btns">
+                                <a href="shop.html" class="boxed-btn">Voir la Collection</a>
+                                <a href="contact.html" class="bordered-btn">Contactez-nous</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- single home slider -->
+    <div class="single-homepage-slider homepage-bg-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 text-center">
+                    <div class="hero-text">
+                        <div class="hero-text-tablecell">
+                            <p class="subtitle">Nouveau Arrivage</p>
+                            <h1>Machines à Café 100% Automatiques</h1>
+                            <div class="hero-btns">
+                                <a href="shop.html" class="boxed-btn">Visitez la Boutique</a>
+                                <a href="contact.html" class="bordered-btn">Contactez-nous</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- single home slider -->
+    <div class="single-homepage-slider homepage-bg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 text-right">
+                    <div class="hero-text">
+                        <div class="hero-text-tablecell">
+                            <p class="subtitle">Promotion Spéciale</p>
+                            <h1>Profitez des Offres de Juin</h1>
+                            <div class="hero-btns">
+                                <a href="shop.html" class="boxed-btn">Visitez la Boutique</a>
+                                <a href="contact.html" class="bordered-btn">Contactez-nous</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	
 	<!-- end home page slider -->
 
 

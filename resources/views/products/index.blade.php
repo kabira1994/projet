@@ -1,9 +1,7 @@
-<!-- resources/views/products/index.blade.php -->
-@extends('layouts.master')
+@extends('layouts.master2')
 
 @section('content')
     <div class="container">
-        <h1>Machines à Café</h1>
         <a href="{{ route('products.create') }}" class="btn btn-primary">Ajouter un produit</a>
         <table class="table mt-4">
             <thead>
@@ -13,6 +11,7 @@
                     <th>Description</th>
                     <th>Prix</th>
                     <th>Stock</th>
+                    <th>Image</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -24,6 +23,9 @@
                         <td>{{ $product->description }}</td>
                         <td>{{ $product->price }}</td>
                         <td>{{ $product->stock }}</td>
+                        <td>
+                            <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}" style="width: 100px; height: auto;">
+                        </td>
                         <td>
                             <a href="{{ route('products.edit', $product->id) }}" class="btn btn-warning">Éditer</a>
                             <form action="{{ route('products.destroy', $product->id) }}" method="POST" style="display:inline;">

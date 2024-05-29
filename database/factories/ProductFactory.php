@@ -18,11 +18,15 @@ class ProductFactory extends Factory
             'price' => $this->faker->randomFloat(2, 10, 1000),
             'stock' => $this->faker->numberBetween(0, 100),
             'image'=>$this->faker->randomElement(
-                ['storage\images\image.png',
-                'storage\images\image1.jpg',
-                
+                [
+                'storage\products\images\image1.jpg',
+                'storage\products\images\image2.png',
+                'storage\products\images\image3.jpg',
+                'storage\products\images\image4.png',
+                'storage\products\images\image5.jpg',
+                'storage\products\images\image6.png'
                 ]
-            ) // Chemin relatif de l'image stockée
-        ];
+            )               //
+            ];
     }
 }
