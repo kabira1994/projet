@@ -1,5 +1,3 @@
-<!-- resources/views/clients/shop.blade.php -->
-
 @extends('layouts.master')
 
 @section('content')

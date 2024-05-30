@@ -95,4 +95,4 @@
     </div>
     <!-- end cart -->
 
-    @endsection
+ @endsection
